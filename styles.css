@@ -60,10 +60,21 @@ html, body {
 #rider-1 {
     left: 0;
     top: -20%;
+    animation: drive 5s alternate infinite linear;
 }
 
 #rider-2 {
     transform: scaleX(-1);
     right: 0;
     top: 35%;
+    animation: drive 5s alternate-reverse infinite linear;
+}
+
+@keyframes drive {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 90%;
+    }
 }
