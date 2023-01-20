@@ -23,12 +23,14 @@ html, body {
     width: 300px;
     opacity: 1;
     top: -40px;
+    animation: wind 20s alternate infinite linear;
 }
 
 .cloud:nth-child(2) {
     width: 200px;
     opacity: 0.5;
     top: 30%;
+    animation: wind 40s alternate-reverse infinite linear;
 }
 
 .grass {
@@ -76,5 +78,14 @@ html, body {
     }
     100% {
         left: 90%;
+    }
+}
+
+@keyframes wind {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 80%;
     }
 }
